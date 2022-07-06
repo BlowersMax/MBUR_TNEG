@@ -18,7 +18,7 @@ const Onboarding = () => {
         } else if (cleanName === 'Sam' && cleanLastN === "Alexander") {
             setClean('SAMAMAMMAMAMAMMAMAMAM')
         } else if (cleanName === 'Sean' && cleanLastN === "Pantellere") {
-            setClean('Boss Man')
+            setClean('Mr. Pants')
         } else if (cleanName === 'Max' && cleanLastN === 'Blowers') {
             console.log('%c Welcome, Max.', 'background: #FF495C; color: #38023b; padding: 10px ')
             setClean('Mr. Blowers')
