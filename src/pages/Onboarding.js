@@ -31,10 +31,10 @@ const Onboarding = () => {
         <div className='onboardingContainer'>
             <div>
                 <h1>It's a pleasure to meet you, {cleanestName}.</h1>
-                <p>Now, let's get to work. Today you will be reviewing various different concepts for Totally Not El
-                    Grupo Youth Cycling. These designs may feature different font faces, new colors, but will definitely
-                    feature a fresh take and will "level up" the current website. You will be asked to provide feedback
-                    on the different designs (what you liked & didn't). Thank you for your time!</p>
+                <p>This website is used to find out which designs users prefer to use more. When you are ready click the
+                    button below. The questions may consist of rating questions, select questions, or free
+                    response. Thank you for your time. </p>
+                <button className='cbutton'>I'm Ready to Continue &rarr;</button>
             </div>
         </div>
     )

@@ -14,7 +14,7 @@ const Home = () => {
         <div className='homeContainer'>
             <div>
                 <h2>Hello & Welcome to The <span className='fancyText'>Max Blowers User Research Website</span>.</h2>
-                <p>The purpose of this website is to collect information for <span className='fancyText'>Totally Not El Grupo Youth Cycling</span>.
+                <p>The purpose of this website is to collect information regarding <span className='fancyText'>users preferred user interface</span>.
                 </p>
                 <h3 className='homeFAQHeader'>Before you begin, I would like to get to know a little bit about you.</h3>
                 <Formik initialValues={{fN: '', lN: '', email: '', relation: ''}} onSubmit={(values) => {
@@ -29,11 +29,20 @@ const Home = () => {
                             </div>
                             <label className='homeFAQHeader'>Some Contact Information</label>
                             <Field className='input' id='email' name='email' placeholder='name@domain.com'/>
-                            <label className='homeFAQHeader'>Your Relation to Totally Not El Grupo Youth Cycling</label>
-                            <div role='group'>
-                                <label> <Field type='radio' name='relation' value="Employee"/>Employee</label>
-                                <label> <Field type='radio' name='relation' value="Member of Organization"/>Participant of Organization</label>
-                                <label> <Field type='radio' name='relation' value="Member of Public"/>Member of General Public</label>
+                            <div className='radioGroupWrapper'>
+                                <label className='homeFAQHeader'>What do you <span
+                                    className='fancyText'>PRIMARILY</span> use websites for?</label>
+                                <div role='group' className='radioGroup'>
+                                    <label> <Field type='radio' name='relation' value="ecommerce"/>Shopping</label>
+                                    <label> <Field type='radio' name='relation' value="browsing"/>Gathering
+                                        Information / Research</label>
+                                    <label> <Field type='radio' name='relation' value="media"/>Using Social Media /
+                                        Watching
+                                        Shows</label>
+                                    <label>Other (please specify)</label>
+                                    <Field className='otherInput' id='relation' name='relation'
+                                           placeholder='Please Specify Other'/>
+                                </div>
                             </div>
                             <button className='button' type='submit'>Continue ></button>
                         </div>
